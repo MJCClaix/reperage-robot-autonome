@@ -1,0 +1,37 @@
+le 09/07/25
+
+la partie graphique n'est pas mal
+il faut revoir la partie coordonnées et repere xy
+*
+en X, le robot aligné verticalement avec un code s'affiche 15mm trop à droite
+pour toute la largeur.
+en Y on est nickel !
+
+
+
+hcamera = 1640
+y = 200 camera -> bords pite
+X = 40 camera -> centre piste gauche
+hrobot 350
+
+dimensions piste
+3000*2000
+positions centres balises :
+23 en 575, 570
+22 en 575, 1430
+20 en 2425, 1430
+21 en 2425, 570
+
+code ARUCO ROBOT 10
+
+
+
+
+
+
+sudo apt install cmake libgtk2.0-dev pkg-config
+mkdir build
+cd build
+cmake ..
+make -j 8
+sudo make install
